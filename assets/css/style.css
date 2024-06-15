@@ -419,6 +419,9 @@ footer .socmed div .bi:hover {
   section#choose .container .content .choose-image img {
     width: 80%;
   }
+  footer .container .row .socmed {
+    margin-top: 1rem;
+  }
 }
 
 /* Media Screen Max 768px */
@@ -440,6 +443,12 @@ footer .socmed div .bi:hover {
   }
   section#contact .container .row .heading-content .heading .cont,
   section#contact .container .row .heading-content .content a {
+    font-size: 12px;
+  }
+  footer .container .row .col-md-3 p,
+  footer .container .row .col-md-2 p a,
+  footer .container .row .col-md-3 p a,
+  footer .container .row .col-md-7 p {
     font-size: 12px;
   }
 }
