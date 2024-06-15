@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 65px);
 }
 
 /* Header */
@@ -60,7 +62,7 @@ section#keunggulan .container .row img {
   height: 15%;
 }
 section#keunggulan .container .row .keunggulan-text {
-  color: #040411;
+  color: #fff;
 }
 section#keunggulan .container .row .keunggulan-text span {
   font-weight: 700;
@@ -197,6 +199,175 @@ section#choose .container .content-text .feature .feature-icon img {
   width: 15%;
 }
 
+/* Contact Us Section */
+section#contact {
+  background: #3e4e88;
+  color: #fff;
+}
+section#contact .container .row .col-12 .btn {
+  font-size: 14px;
+}
+section#contact .container .row .col-12 .btn-first {
+  background-color: #4c78fa;
+  color: #fff;
+  transition: 0.5s ease;
+  padding: 0.5rem 5rem;
+}
+section#contact .container .row form .form-control {
+  background-color: #4c77fa53;
+  color: #fff;
+  border: 0;
+}
+section#contact .container .row form .form-control::placeholder {
+  color: #ffffffb9;
+}
+section#contact .container .row form textarea {
+  resize: none;
+}
+section#contact .container .row .col-12 .btn-first:hover {
+  background-color: #fff;
+  color: #4c78fa;
+}
+section#contact .container .row .heading-content #since {
+  font-size: 12px;
+}
+section#contact .container .row .heading-content #since span {
+  color: #4c78fa;
+}
+section#contact .container .row .heading-content h1 {
+  font-weight: 800;
+}
+section#contact .container .row .heading-content h1 span {
+  color: #4c78fa;
+}
+section#contact .container .row .heading-content .content a {
+  text-decoration: none;
+  color: #fff;
+}
+section#contact .container .row .heading-content .content a:hover {
+  text-decoration: underline;
+}
+section#contact .container .row .heading-content .content > div {
+  margin-bottom: 2rem;
+}
+section#contact .container .row .heading-content .content i {
+  background-color: #4c78fa;
+  padding: 0.5rem 0.6rem;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+}
+
+/* Our Doctor Section */
+section#doctor .container .row .doctor-text #since {
+  font-size: 12px;
+}
+section#doctor .container .row .doctor-text #since span {
+  color: #4c78fa;
+}
+section#doctor .container .row .doctor-text h1 {
+  font-weight: 800;
+}
+section#doctor .container .row .doctor-text h1 span {
+  color: #4c78fa;
+}
+section#doctor .container .row .doctor-image .card {
+  width: 18em;
+  height: auto;
+  padding: 0;
+  border: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+section#doctor .container .row .doctor-image .card:hover {
+  transform: translateY(-10px);
+}
+section#doctor .container .row .doctor-image .card .card-img {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: inherit;
+}
+section#doctor .container .row .doctor-image .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#doctor .container .row .doctor-image .card .card-text {
+  padding: 1rem;
+}
+section#doctor .container .row .doctor-image .card .card-text h5 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #4c78fa;
+}
+section#doctor .container .row .doctor-image .card .card-text p {
+  font-weight: 14px;
+  color: #ccc;
+}
+
+/* FAQ Section */
+section#faq .container .row .faq-text #since {
+  font-size: 12px;
+}
+section#faq .container .row .faq-text #since span {
+  color: #4c78fa;
+}
+section#faq .container .row .faq-text h1 {
+  font-weight: 800;
+}
+section#faq .container .row .faq-text h1 span {
+  color: #4c78fa;
+}
+section#faq .container .row .accordion button p {
+  font-weight: 700;
+}
+section#faq .container .row .accordion button p span {
+  color: #4c78fa;
+}
+section#faq .container .row .accordion .accordion-body {
+  font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+  color: #fff;
+  background-color: #3e4e88;
+}
+footer span {
+  color: #4c78fa;
+  font-weight: 800;
+}
+footer p {
+  font-weight: lighter;
+}
+footer h5 {
+  font-weight: 900;
+}
+footer a {
+  color: #fff;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .socmed {
+  display: flex;
+  justify-content: space-around;
+}
+footer .socmed div .bi {
+  background-color: #4c77fa53;
+  padding: 0.5rem 0.65rem;
+  transition: 0.5s ease;
+}
+footer .socmed div .bi:hover {
+  background-color: #fff;
+  color: #4c78fa;
+}
+
 /* Media Screen Max 768px */
 @media screen and (max-width: 768px) {
   #since {
@@ -225,6 +396,12 @@ section#choose .container .content-text .feature .feature-icon img {
   }
   section#choose .container .content-text {
     margin-top: 1rem;
+  }
+  section#doctor .container .row .services-image .card {
+    width: 25em;
+  }
+  footer .copy-icon {
+    padding-left: 0;
   }
 }
 
@@ -260,6 +437,10 @@ section#choose .container .content-text .feature .feature-icon img {
   }
   section#about .container .row .about-rate span {
     font-size: 22px;
+  }
+  section#contact .container .row .heading-content .heading .cont,
+  section#contact .container .row .heading-content .content a {
+    font-size: 12px;
   }
 }
 

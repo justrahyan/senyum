@@ -37,3 +37,10 @@ function clock() {
   document.getElementById("year").innerHTML = year;
 }
 var inter = setInterval(clock, 400);
+
+// Navigation Behavior
+const navigationHeight = document.querySelector(".navbar").offsetHeight;
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight - 1 + "px"
+);
