@@ -438,6 +438,9 @@ footer .socmed div .bi:hover {
 
 /* Media Screen Max 768px */
 @media screen and (max-width: 480px) {
+  #since {
+    font-size: 10px;
+  }
   section#hero .container .row .hero-text {
     font-size: 12px;
   }
@@ -455,6 +458,11 @@ footer .socmed div .bi:hover {
   }
   section#contact .container .row .heading-content .heading .cont,
   section#contact .container .row .heading-content .content a {
+    font-size: 12px;
+  }
+  section#contact .container .row form,
+  section#contact .container .row form .form-control,
+  section#contact .container .row form .btn-first {
     font-size: 12px;
   }
   footer .container .row .col-md-3 p,
