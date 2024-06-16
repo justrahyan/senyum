@@ -57,10 +57,10 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-white px-3">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/img/Logo.png" alt="Senyum Logo" width="150" />
+          <img src="assets/img/Logo.png" width="150" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -79,9 +79,13 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="assets/img/Logo.png" alt="Senyum Logo" width="150" />
-            </h5>
+            <img
+              src="assets/img/Logo.png"
+              width="140"
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+              alt="Senyum Logo"
+            />
             <button
               type="button"
               class="btn-close"
@@ -95,7 +99,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#services">Our Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About Us</a>
@@ -104,9 +108,8 @@
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#faq">FAQs</a>
               </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -229,7 +232,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="px-3">
+    <section id="services" class="py-5 px-3">
       <div class="container">
         <div class="row justify-content-center">
           <div class="services-text text-center">
@@ -294,7 +297,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="choose" class="py-5 px-3">
+    <section id="choose" class="py-3 px-3">
       <div class="container my-5">
         <div class="heading">
           <div class="col-sm-12 mb-4">
@@ -367,66 +370,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 px-3">
+    <section id="contact" class="px-3">
       <div class="container">
         <div class="row">
-          <div class="col-md">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"
-                  >Nama Anda <span>*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  placeholder="Masukkan nama"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label"
-                  >Email Anda <span>*</span></label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputEmail4"
-                  placeholder="Masukkan email"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label"
-                  >Subject <span>*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="Masukkan subject"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label"
-                  >Pesan Anda <span>*</span></label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="5"
-                  placeholder="Masukkan pesan"
-                  required
-                ></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-first rounded-pill">
-                  Kirim
-                </button>
-              </div>
-            </form>
-          </div>
           <div class="heading-content col-md">
             <div class="heading">
               <p id="since"><span class="me-2">━</span>CONTACT US</p>
@@ -461,6 +407,67 @@
                 </a>
               </div>
             </div>
+          </div>
+          <div class="col-md">
+            <form class="row g-3" method="post" action="https://formspree.io/f/mzbnnyqk">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"
+                  >Nama Anda <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  name="full-name"
+                  placeholder="Masukkan nama"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"
+                  >Email Anda <span>*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  name="email"
+                  placeholder="Masukkan email"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label"
+                  >Subject <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  name="subject"
+                  placeholder="Masukkan subject"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label"
+                  >Pesan Anda <span>*</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  name="message"
+                  placeholder="Masukkan pesan"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-first rounded-pill">
+                  Kirim
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
